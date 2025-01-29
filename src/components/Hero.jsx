@@ -6,7 +6,6 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import Nav from './Nav';
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -88,8 +87,7 @@ const Hero = () => {
 
   return (
     <div ref={container}>
-      {/* <Navbar /> */}
-      <Navbar/>
+      <Navbar />
       <Main className='flex relative'>
         <div className="left w-[50%] z-50" style={{ paddingTop: '12.5rem' }}>
           <div className='flex items-center overflow-hidden'>

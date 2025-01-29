@@ -48,11 +48,7 @@ html,body
 }
 body
 {
-    min-height: 100vh;
-    /* background-color: purple; */
-    /* background-image: radial-gradient(circle farthest-corner at 50% 50%, #5c31ff, rgba(92, 49, 255, 0) 69%); */
-    /* background-image: radial-gradient(circle farthest-corner at 50% 50%, #f88cd4, rgba(248, 140, 212, 0) 69%); */
-    
+    min-height: 100vh;    
 }
 
 .hero_gradient1

@@ -9,19 +9,19 @@ const Navbar = () => {
     const container = useRef();
 
     useGSAP(() => {
-  
+
         var tl = gsap.timeline();
         tl.from("nav", {
-          translateY: "-85",
-          duration: 0.5,
-          delay: 2.5,
+            translateY: "-85",
+            duration: 0.5,
+            delay: 2.5,
         })
 
-    
-      }, { scope: container });
+
+    }, { scope: container });
 
     return (
-        <div ref={container}> 
+        <div ref={container}>
             <nav className='w-full h-32 flex justify-between items-center absolute top-0 left-0 z-50' style={{ padding: "0 5rem" }}>
 
                 <div className="w-24">
