@@ -6,6 +6,7 @@ import { useRef } from 'react';
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import Nav from './Nav';
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
@@ -87,9 +88,10 @@ const Hero = () => {
 
   return (
     <div ref={container}>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Navbar/>
       <Main className='flex relative'>
-        <div className="left w-[50%]" style={{ paddingTop: '12.5rem' }}>
+        <div className="left w-[50%] z-50" style={{ paddingTop: '12.5rem' }}>
           <div className='flex items-center overflow-hidden'>
             <img className='heading_image h-[4.5rem] scale-0' src="https://cdn.prod.website-files.com/5ffcd643561bc26ed27a87a1/5ffcd643561bc21ff17a87ad_icon.svg" alt="" />
             <h1 className='heading font-[font3] text-white text-[5rem] uppercase flex leading-16'>WEBFLOW</h1>
@@ -104,7 +106,7 @@ const Hero = () => {
             <p className='para font-[font8] text-xl text-white w-[80%] translate-y-16' >Giving Webflow developers a competitive edge in the industry through interactive tutorials</p>
           </div>
 
-          <div className=' btn bg-white opacity-0 h-[4rem] relative w-0 overflow-hidden' style={{ padding: '0.05rem', marginTop: '2.5rem' }}>
+          <div className=' btn cursor-pointer bg-white opacity-0 h-[4rem] relative w-0 overflow-hidden' style={{ padding: '0.05rem', marginTop: '2.5rem' }}>
             <div className='bg-[#0D0628] w-[70%] h-full text-md font-[font8] font-extrabold uppercase flex items-center justify-center text-[#f88cd4]'>Glassmorphism tutorial</div>
             <div className='h-full w-[30%] absolute right-0 top-0 flex items-center justify-center '>
               <img className='h-[1.7rem]' src="https://cdn.prod.website-files.com/5ffcd643561bc26ed27a87a1/5ffcd643561bc2d91d7a87af_arrow.svg" alt="" />
